@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 1.75em;
+    color: black;
+}
+
+.cont {
+    margin-top: 40px;
+    width: 100%;
+}
+
+section>h2 {
+    text-align: center;
+    float: right;
+    margin: 0;
+    width: 200px;   
+    height: 42px;
+    padding-top: 10px;
+    font-size: 1.25em;
+    font-weight: bold;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+
+#sec1>h2{
+    background-color: pink;
+}
+
+#sec2>h2{
+    background-color: red;
+    color: white;
+}
+#sec3>h2{
+    background-color: yellow;
+}
+
+section{
+    background-color: #75BFF2;
+    margin: 10px;
+    color: black;
+    border: 1px solid black;
+}
+
+
+section>p {
+    padding: 45px 15px 10px 15px;
+    font-size: 1em;
+}
+
+
+@media (min-width: 992px) {
+    .cont-sec1,.cont-sec2,.cont-sec3{
+        float: left;
+        width: 33.33%;
+    }
+    
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .cont-sec1,.cont-sec2,.cont-sec3 {
+        float: left;
+    }
+    
+    .cont-sec1,.cont-sec2 {
+        width: 50%;
+    }
+    
+    .cont-sec3 {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 767px) {
+     .cont-sec1,.cont-sec2,.cont-sec3 {
+        float: left;
+        width: 100%;
+    }
+}
